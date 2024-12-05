@@ -10,7 +10,7 @@
         <RepositoryUrl>https://github.com/to-wer/WebAppEssentials</RepositoryUrl>
         <RootNamespace>WebAppEssentials</RootNamespace>
         <Title>WebAppEssentials.Core</Title>
-        <Description>WebAppFundamentals provides essential components for building robust and scalable ASP.NET Core applications.</Description>
+        <Description>WebAppEssentials provides essential components for building robust and scalable ASP.NET Core applications.</Description>
     </PropertyGroup>
 
 </Project>
