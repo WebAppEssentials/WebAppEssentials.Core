@@ -4,7 +4,6 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <Version>0.1.0-alpha</Version>
         <Authors>Torsten Werner</Authors>
         <RepositoryUrl>https://github.com/WebAppEssentials/WebAppEssentials.Core</RepositoryUrl>
         <PackageProjectUrl>https://github.com/WebAppEssentials</PackageProjectUrl>
