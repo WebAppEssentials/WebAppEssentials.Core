@@ -1,6 +1,6 @@
-using WebAppEssentials.Core.Enums;
+using WebAppEssentials.Enums;
 
-namespace WebAppEssentials.Core.Models;
+namespace WebAppEssentials.Models;
 
 /// <summary>
 /// Represents the parameters for a query operation.

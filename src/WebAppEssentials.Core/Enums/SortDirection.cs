@@ -1,4 +1,4 @@
-namespace WebAppEssentials.Core.Enums;
+namespace WebAppEssentials.Enums;
 
 /// <summary>
 /// Represents the sorting direction for data.

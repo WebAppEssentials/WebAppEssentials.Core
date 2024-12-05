@@ -1,4 +1,4 @@
-namespace WebAppEssentials.Core.Models;
+namespace WebAppEssentials.Models;
 
 /// <summary>
 /// Represents a paginated response containing a list of items and pagination metadata.

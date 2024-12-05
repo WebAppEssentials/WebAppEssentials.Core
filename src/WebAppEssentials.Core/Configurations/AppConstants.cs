@@ -1,4 +1,4 @@
-namespace WebAppEssentials.Core.Configurations;
+namespace WebAppEssentials.Configurations;
 
 /// <summary>
 /// Contains various constants used throughout the application.

@@ -1,4 +1,4 @@
-namespace WebAppEssentials.Core.Models.Info;
+namespace WebAppEssentials.Models.Info;
 
 /// <summary>
 /// Represents build information such as version and build date.
