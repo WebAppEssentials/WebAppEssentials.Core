@@ -7,6 +7,7 @@
         <Version>0.1.0-alpha</Version>
         <Authors>Torsten Werner</Authors>
         <RepositoryUrl>https://github.com/WebAppEssentials/WebAppEssentials.Core</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/WebAppEssentials</PackageProjectUrl>
         <RootNamespace>WebAppEssentials</RootNamespace>
         <Title>WebAppEssentials.Core</Title>
         <PackageId>WebAppEssentials.Core</PackageId>
