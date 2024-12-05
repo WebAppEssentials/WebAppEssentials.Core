@@ -28,17 +28,13 @@ jobs:
       - name: Restore dependencies
         run: dotnet restore ./src/WebAppEssentials.Core/WebAppEssentials.Core.csproj
 
-      - name: Determine Version
-        id: version
-        run: echo "VERSION=0.1.0-alpha.$(date +%s)" >> $GITHUB_ENV
-      
       # Build the project
       - name: Build project
-        run: dotnet build --configuration Release --no-restore /p:Version=${{ env.VERSION }} ./src/WebAppEssentials.Core/WebAppEssentials.Core.csproj
+        run: dotnet build --configuration Release --no-restore ./src/WebAppEssentials.Core/WebAppEssentials.Core.csproj
         
         # Pack the library
       - name: Pack NuGet Package
-        run: dotnet pack --configuration Release --no-build /p:PackageVersion=${{ env.VERSION }} --output ./nupkgs ./src/WebAppEssentials.Core/WebAppEssentials.Core.csproj
+        run: dotnet pack --configuration Release --no-build --output ./nupkgs ./src/WebAppEssentials.Core/WebAppEssentials.Core.csproj
       
       # Push to GitHub Package Registry
       - name: Publish NuGet Package

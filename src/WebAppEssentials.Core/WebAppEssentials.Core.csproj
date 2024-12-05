@@ -13,4 +13,15 @@
         <Description>WebAppEssentials provides essential components for building robust and scalable ASP.NET Core applications.</Description>
     </PropertyGroup>
 
+    <PropertyGroup>
+        <MinVerTagPrefix>v</MinVerTagPrefix>
+    </PropertyGroup>
+    
+    <ItemGroup>
+      <PackageReference Include="MinVer" Version="6.0.0">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+    </ItemGroup>
+
 </Project>
