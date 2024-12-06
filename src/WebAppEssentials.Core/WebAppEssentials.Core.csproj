@@ -11,6 +11,10 @@
         <Title>WebAppEssentials.Core</Title>
         <PackageId>WebAppEssentials.Core</PackageId>
         <Description>WebAppEssentials provides essential components for building robust and scalable ASP.NET Core applications.</Description>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <RepositoryType>git</RepositoryType>
+        <PackageIcon>icon.png</PackageIcon>
     </PropertyGroup>
 
     <PropertyGroup>
@@ -24,4 +28,9 @@
       </PackageReference>
     </ItemGroup>
 
+    <ItemGroup>
+        <None Include="..\..\README.md" Pack="true" PackagePath="\"/>
+        <None Include="..\..\icon.png" Pack="true" PackagePath="\"/>
+    </ItemGroup>
+    
 </Project>
