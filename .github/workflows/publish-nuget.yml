@@ -26,9 +26,12 @@ jobs:
       - name: Set up NuGet authentication
         run: dotnet nuget add source --name github --username GH_NUGET_USERNAME --password ${{ secrets.GH_NUGET_TOKEN }} --store-password-in-clear-text https://nuget.pkg.github.com/WebAppEssentials/index.json
 
+      - name: Remove existing NuGet source (NuGet.org)
+        run: dotnet nuget remove source nuget.org || true
+
       # Set up NuGet authentication
       - name: Set up NuGet authentication
-        run: dotnet nuget add source --name NuGetOfficial --username ${{ secrets.NUGET_USERNAME }} --password ${{ secrets.NUGET_API_KEY }} --store-password-in-clear-text https://api.nuget.org/v3/index.json
+        run: dotnet nuget add source --name nuget.org --username ${{ secrets.NUGET_USERNAME }} --password ${{ secrets.NUGET_API_KEY }} --store-password-in-clear-text https://api.nuget.org/v3/index.json
             
       # Restore dependencies
       - name: Restore dependencies
@@ -48,4 +51,4 @@ jobs:
 
       # Push to NuGet.org        
       - name: Publish NuGet Package
-        run: dotnet nuget push "./nupkgs/*.nupkg" --source "NuGetOfficial" --api-key ${{ secrets.NUGET_API_KEY }} --skip-duplicate
+        run: dotnet nuget push "./nupkgs/*.nupkg" --source "nuget.org" --api-key ${{ secrets.NUGET_API_KEY }} --skip-duplicate
